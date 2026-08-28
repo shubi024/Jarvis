@@ -1,0 +1,72 @@
+# ==========================================
+# J.A.R.V.I.S. Project .gitignore
+# ==========================================
+
+# 1. Environment and Secrets
+.env
+.env.*
+*.key
+*.pem
+*.secret
+credentials.json
+token.json
+
+# 2. Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 3. IDE / Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.pydevproject
+
+# 4. Databases and Local Runtime Files
+*.db
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# 5. Frontend / Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 6. OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# 7. JARVIS-Specific Temporary & Runtime Files
+tmp/
+temp/
+*.tmp
+cache/
+*.cache
+state/
+local_artifacts/
+.jarvis_session_state.json
+.jarvis_emergency_lock.json
